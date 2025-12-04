@@ -189,7 +189,8 @@ export function runSimulation(
             shortfall: amountPaidByMember,
             status,
             source,
-            reason
+            reason,
+            category: item.category
         });
     });
 

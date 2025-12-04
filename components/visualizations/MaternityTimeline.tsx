@@ -25,7 +25,7 @@ export function MaternityTimeline() {
             {/* Timeline Track */}
             <div className="relative pl-4 border-l-2 border-slate-100 space-y-8 my-8">
                 {events.map((event, i) => {
-                    const Icon = ICONS[event.category] || Stethoscope; // You'd need to add 'category' to timeline event in Engine
+                    const Icon = (event.category && ICONS[event.category]) || Stethoscope;
 
                     return (
                         <div key={i} className="relative">
